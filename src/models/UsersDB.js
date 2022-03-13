@@ -1,6 +1,7 @@
 const mongoose = require("mongoose");
+const uri = process.env.MONGODB_URI;
 mongoose.connect(
-  "mongodb+srv://ashique:zxcvbnml@database.nvbnr.mongodb.net/database?retryWrites=true&w=majority"
+  uri
 );
 
 const Schema = mongoose.Schema;
