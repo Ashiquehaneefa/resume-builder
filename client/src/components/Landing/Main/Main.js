@@ -12,7 +12,7 @@ function Main() {
     const navigate = useNavigate();
 
   function handleClick() {
-    navigate("/create");
+    navigate("/signin");
   }
   
     return (
