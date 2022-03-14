@@ -7,7 +7,8 @@ const loginRouter = require("./src/routes/LoginRoute");
 const signupRouter = require("./src/routes/SignupRoute");
 const emailvalidator = require("email-validator");
 
-const port = process.env.PORT || 5000
+
+const port = process.env.PORT
 
 
 
