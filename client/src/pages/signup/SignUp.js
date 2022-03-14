@@ -46,7 +46,7 @@ const SignUp = () => {
     };
     console.log("called fetch");
     const response = await fetch(
-      "http://localhost:5000/signup/adduser",
+      "/signup/adduser",
       requestOptions
     );
     const respData = await response.json();

@@ -31,7 +31,7 @@ const SignIn = (props) => {
     };
     console.log("called fetch");
     const response = await fetch(
-      "http://localhost:5000/login/verifyuser",
+      "/login/verifyuser",
       requestOptions
     );
     const respData = await response.json();

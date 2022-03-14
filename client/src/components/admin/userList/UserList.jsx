@@ -6,6 +6,7 @@ import axios from 'axios';
 import {  Table, TableBody, TableCell, TableHead, TableRow} from '@mui/material';
 
 export default function UserList() {
+
   // const [data, setData] = useState(userRows);
   var [data,setData] = useState([]);
 
@@ -13,7 +14,7 @@ export default function UserList() {
     console.log("hi")
     // setData(data.filter((item) => item.email !== id));
 
-    await axios.post(`http://localhost:5000/deleteuser/${id}`).then(
+    await axios.post(`/deleteuser/${id}`).then(
         (response)=>{
             console.log(response);
             // setData(data = response.data);
@@ -73,7 +74,7 @@ export default function UserList() {
   async function dataLoading  (){
     
    
-    await axios.get("http://localhost:5000/userslist").then(
+    await axios.get("/userslist").then(
         (response)=>{
             // console.log(response);
             setData(data = response.data);
